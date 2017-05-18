@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StreetFitness.App">
+    <Position X="26.75" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AwAgCWAYAAQQhAAAAQQAAAAAAAAAMQAAEACEAIIAAAI=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.LocalizedStrings" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>LocalizedStrings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.MainPage" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAIAAgAAAACCAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.Model.AvoidableFood">
+    <Position X="12.5" Y="14.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAABgACAEAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\AvoidableFood.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StreetFitness.Model.Exercise">
+    <Position X="17" Y="14.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAICJAAAAABoICAEAABAAAQAAAAAAABAQAAAAAAAAAQ=</HashCode>
+      <FileName>Model\Exercise.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StreetFitness.Model.HealthyFood">
+    <Position X="19.25" Y="14.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAABgACAEAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\HealthyFood.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StreetFitness.Model.ObjectDataContext" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAIAEAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ObjectDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.Model.PropertyChangedBase">
+    <Position X="15.5" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAABgAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Model\PropertyChangedBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StreetFitness.Model.Workout">
+    <Position X="14.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACKAAAAADgJCAEEAFAAAUAAAAQAEAAAAIAAAAAAAA=</HashCode>
+      <FileName>Model\Workout.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StreetFitness.Resources.AppResources" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAAABEIAAAQAAAAAAAAAAAAIAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.Utils.BinaryToBitmapImageConverter" BaseTypeListCollapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\BinaryToBitmapImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="StreetFitness.Utils.UriHelper" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQBAACAQABiCQAogAAAAAAgAEgIKAACAAAAAEAAAKAI=</HashCode>
+      <FileName>Utils\UriHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.Utils.Utils">
+    <Position X="23.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACAACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.AboutPage" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AboutPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.AddExerciseView">
+    <Position X="6.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAEADAABIAAAAAAAAAACAQAABAAAAAABQAAAABBAIA=</HashCode>
+      <FileName>View\AddExerciseView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.AllExercisesView" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>View\AllExercisesView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.AvoidableFoodEditView">
+    <Position X="11" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EIAEADAABIAAAAAAAAAAAAQAABAAAAAAAAAAAABJAIA=</HashCode>
+      <FileName>View\AvoidableFoodEditView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.AvoidableFoodView" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAIAAAAAQAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AvoidableFoodView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.EntityEditPage">
+    <Position X="9.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAQAAAAAAAAAQAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>View\EntityEditPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.ExerciseEditView">
+    <Position X="1.25" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAEADAABIAAAAAAAAAACAQAABAAAAAABQAAAABJAIA=</HashCode>
+      <FileName>View\ExerciseEditView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.ExerciseView" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAIAAAAAQAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ExerciseView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.HealthyFoodEditView">
+    <Position X="8.25" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EIAEADAABIAAAAAAAAAAAAQAABAAAAAAAAAAAABJAIA=</HashCode>
+      <FileName>View\HealthyFoodEditView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.HealthyFoodView" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAIAAAAAQAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\HealthyFoodView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.NutritionListsView" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAEAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\NutritionListsView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.PageBase">
+    <Position X="2.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PageBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.PlayWorkoutView">
+    <Position X="30.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEiQAAEAQgAQIBiQAABAQCAAACAQMAAQAAAAAAAIA=</HashCode>
+      <FileName>View\PlayWorkoutView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.ScheduleWorkoutView">
+    <Position X="28.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQCA=</HashCode>
+      <FileName>View\ScheduleWorkoutView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.WorkoutEditView">
+    <Position X="3.75" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAUADAABIAAAAAAAAAAAAQAABAAAAAAAAAAAABBAIA=</HashCode>
+      <FileName>View\WorkoutEditView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.ExercisesListView" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAEAAAEAAAQAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>View\WorkoutExercisesListView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.WorkoutsListView" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\WorkoutsListView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.View.WorkoutView" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAIAAAAAQBAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\WorkoutView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.ViewModel.AvoidableFoodViewModel">
+    <Position X="5.75" Y="18.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\AvoidableFoodViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.ViewModel.ExercisesViewModel">
+    <Position X="8.5" Y="18.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAwAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ExercisesViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.ViewModel.HealthyFoodViewModel">
+    <Position X="0.5" Y="18.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\HealthyFoodViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.ViewModel.ItemsViewModelBase&lt;T&gt;">
+    <Position X="4.25" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACEAAAAAAAAAAgBAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ItemsViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StreetFitness.ViewModel.ViewModelBase">
+    <Position X="4.25" Y="11.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAQAAAAIAAACAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StreetFitness.ViewModel.WorkoutsViewModel">
+    <Position X="3.25" Y="18.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\WorkoutsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="StreetFitness.Model.ITable" Collapsed="true">
+    <Position X="23.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StreetFitness.Model.IPropertyChangedNotifier" Collapsed="true">
+    <Position X="21.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

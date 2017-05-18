@@ -1,0 +1,98 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="StreetFitness.View.WorkoutView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="clr-namespace:StreetFitness.Utils"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <converters:BinaryToBitmapImageConverter x:Key="BinaryToBitmapImageConverter"/>
+    </phone:PhoneApplicationPage.Resources>
+    
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBarIconButton IconUri="/Assets/icons/appbar.edit.rest.png" Text="edit" Click="OnEdit"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/icons/appbar.delete.rest.png" Text="delete" Click="OnDelete"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/icons/muscle.white.png" Text="play" Click="OnPlay"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <phone:Pivot x:Name="pivot" Title="Workout Journal">
+            <!--Pivot item one-->
+            <phone:PivotItem Header="Overview">
+                <ListBox x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                    <TextBlock Text="{Binding Name}" Margin="12,24,0,5" FontSize="32" Style="{StaticResource PhoneTextGroupHeaderStyle}" />
+                    <Grid Margin="0,12,12,0">
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- picture -->
+                        <Border HorizontalAlignment="Left" Background="{StaticResource PhoneContrastBackgroundBrush}">
+                            <Image x:Name="WorkoutImage" Grid.Row="0" Grid.Column="0" MaxWidth="480" MaxHeight="250" Stretch="Uniform" Source="{Binding Photo, Converter={StaticResource BinaryToBitmapImageConverter}}"/>
+                        </Border>
+                        
+                        <!-- cycles -->
+                        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Text="Cycles" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" Margin="0,24,0,-5" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Text="{Binding Cycles}" Foreground="{StaticResource PhoneForegroundBrush}" FontSize="32" Margin="0,24,0,-5" />
+                        <!-- rest between cycles -->
+                        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Text="Rest between cycles" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" Margin="0,24,0,-5" />
+
+                        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Text="{Binding RestBetweenCycles, StringFormat=' {0} min'}" Foreground="{StaticResource PhoneForegroundBrush}" FontSize="32" Margin="0,24,0,-5" />
+                          
+                        
+                        <!-- rest between exercises -->
+                        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" Text="Exercise rest" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" Margin="0,24,0,-5" />
+                        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Text="{Binding RestBetweenExercises, StringFormat=' {0} min'}" Foreground="{StaticResource PhoneForegroundBrush}" FontSize="32" Margin="0,24,0,-5" />
+                    </Grid>
+                </ListBox>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem>
+                <phone:PivotItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Description" />
+                    </StackPanel>
+                </phone:PivotItem.Header>
+                
+                
+                <Grid>
+                    <StackPanel x:Name="Content" Grid.Row="1" Margin="12,50,12,0">
+                        <Button x:Name="workoutExercises" Content="Exercises" Height="90" Width="400" HorizontalAlignment="Center" Click="workoutExercises_Click"/>
+                        <ScrollViewer Height="350">
+                            <TextBlock x:Name="description" TextWrapping="Wrap" MaxWidth="480"
+                                   Text="{Binding Description}" Style="{StaticResource PhoneTextNormalStyle}"
+                                   Margin="0" HorizontalAlignment="Left"/>
+                        </ScrollViewer>
+                        
+                    </StackPanel>
+                </Grid>
+                
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+    
+</phone:PhoneApplicationPage>

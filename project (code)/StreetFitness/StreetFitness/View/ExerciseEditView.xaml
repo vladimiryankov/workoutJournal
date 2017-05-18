@@ -1,0 +1,84 @@
+﻿<local:EntityEditPage
+    x:Class="StreetFitness.View.ExerciseEditView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:local="clr-namespace:StreetFitness.View"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="clr-namespace:StreetFitness.Utils"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <local:EntityEditPage.Resources>
+        <converters:BinaryToBitmapImageConverter x:Key="BinaryToBitmapImageConverter"/>
+    </local:EntityEditPage.Resources>
+
+    <local:EntityEditPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBarIconButton IconUri="/Assets/icons/camera.white.png" Text="take photo" Click="OnTakePhoto"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/icons/folder.white.png" Text="choose photo" Click="OnChoosePhoto"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/icons/appbar.check.rest.png" Text="save exercise" Click="OnSaveExercise"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/icons/appbar.cancel.rest.png" Text="cancel" Click="OnCancel"/>
+        </shell:ApplicationBar>
+    </local:EntityEditPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Workout Journal" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Exercise details" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <StackPanel Margin="0,0,0,24">
+                        <Border Margin="0,0,0,0" HorizontalAlignment="Center"  Width="400"  Background="{StaticResource PhoneContrastBackgroundBrush}">
+                            <Image x:Name="image" Width="400" Height="219" Source="{Binding Photo, Converter={StaticResource BinaryToBitmapImageConverter}}" Stretch="Uniform" Margin="0" />
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,12">
+                        <TextBlock Text="Repeats" VerticalAlignment="Center"/>
+                        <TextBox x:Name="exerciseRepeats" Text="{Binding Repeats, Mode=TwoWay}" Width="71" InputScope="Number"/>
+                        <TextBlock Text="Assign to Workout" VerticalAlignment="Center"/>
+                        <toolkit:ListPicker x:Name="listWorkouts" ExpansionMode="FullScreenOnly" Width="120" >
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <Grid Background="Transparent" Margin="12">
+                                        <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextLargeStyle}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <TextBlock Text="{Binding Name}" TextWrapping="Wrap" />
+                                    </Grid>
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                        </toolkit:ListPicker>
+                    </StackPanel>
+                    <TextBlock Text="Name" Margin="12,0,0,0"/>
+                    <TextBox x:Name="exerciseName" Text="{Binding Name, Mode=TwoWay }" />
+                    <TextBlock Text="Description" Margin="12,0,0,0"/>
+                    <TextBox x:Name="exerciseDescription" Text="{Binding Description, Mode=TwoWay }" Height="150" AcceptsReturn="True"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</local:EntityEditPage>

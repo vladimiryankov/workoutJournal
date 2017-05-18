@@ -1,0 +1,13 @@
+The Workout Journal is designed to serve as personal workout instructor.
+
+The application comes with a variety of workout routines and exercises, which could be edited and in such a way personalized for the specific needs. Furthermore it gives to opportunity to add new items in both sections. The user can not only keep track of his favorite exercises but can also interact with them. 
+
+The trainer offers a play mode, which simulates a real time workout and also gives advises about the needed rest times. 
+
+The implemented mobile instructor helps organizing the physical activity plan with the other tasks thanks to the built in scheduler. The appointed workouts are synced with the smartphone's  calendar. This helps creating a personal fitness program.
+
+The application helps the user also to pay attention to his diet plan, pointing out healthy or avoidable foods. 
+
+The given exercises are only a guidance and must be dealt with caution. Any forms of excessive physical activity must not be encouraged since they can invoke further health issues.
+
+You are using the software guidance at your own risk and are responsible for assessing the difficulty of the routines regarding your own strength.
